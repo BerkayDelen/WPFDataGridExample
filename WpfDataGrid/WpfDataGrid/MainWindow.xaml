@@ -22,8 +22,8 @@
         </ComboBox>
         <Label x:Name="label" Content="Ad" HorizontalAlignment="Left" Margin="27,55,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label1" Content="Soyad" HorizontalAlignment="Left" Margin="27,96,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,1.368"/>
-        <TextBox Text="{Binding ElementName=tb1,Path=SelectedItem.AD}" HorizontalAlignment="Left" Height="23" Margin="132,55,0,0" VerticalAlignment="Top" Width="120"/>
-        <TextBox Text="{Binding ElementName=tb1,Path=SelectedItem.SOYAD}" HorizontalAlignment="Left" Height="23" Margin="132,96,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Ad" Text="{Binding ElementName=tb1,Path=SelectedItem.AD}" HorizontalAlignment="Left" Height="23" Margin="132,55,0,0" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="txt_Soyad" Text="{Binding ElementName=tb1,Path=SelectedItem.SOYAD}" HorizontalAlignment="Left" Height="23" Margin="132,96,0,0" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="btnAdd" Content="Kişiyi Ekle" HorizontalAlignment="Left" Margin="177,134,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
         <DataGrid Name="tb1" Grid.Column="0" AutoGenerateColumns="False" HorizontalAlignment="Left" Margin="27,177,0,0" VerticalAlignment="Top" Height="124" Width="225">
             <DataGrid.Columns>

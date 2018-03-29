@@ -27,9 +27,7 @@ namespace WpfSample
             list = new List<Customers>()
             {
                 new Customers() {AD="Ahmet", SOYAD="CAN" },
-                new Customers() {AD="Ahmet", SOYAD="CAN" },
-                new Customers() {AD="Ahmet", SOYAD="CAN" },
-                new Customers() {AD="Ahmet", SOYAD="CAN" },
+                
             };
             Customers lst = new Customers();
             lst.AD = "Ali";
@@ -52,7 +50,14 @@ namespace WpfSample
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
             //tb1.ItemsSource = list;
+            Customers customers = new Customers();
+            customers.AD = txt_Ad.Text.ToString();
+            customers.SOYAD = txt_Soyad.Text.ToString();
+            list.Add(customers);
 
+
+            tb1.ItemsSource = null;
+            tb1.ItemsSource = list;
         }
         public class Customers
         {
